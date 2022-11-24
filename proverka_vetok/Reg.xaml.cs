@@ -23,6 +23,67 @@ namespace proverka_vetok
         {
             InitializeComponent(); 
         }
-       
+        int num = 0;
+        private void ChekTextBox_Click(object sender, RoutedEventArgs e)
+        {
+            var TSurname = Surname.Text;
+            var TName = Name.Text;
+            var TPatronymic = Patronymic.Text;
+            var TLogin = Login.Text;
+            var TPassword = Password.Text;
+            if (TSurname.Length == 0)
+            {
+                MessageBox.Show("Фамилия");
+                num++;
+            }
+            else
+            {
+            }
+            if (TName.Length == 0)
+            {
+                MessageBox.Show("Имя");
+                num++;
+            }
+            else
+            {
+            }
+            if (TPatronymic.Length == 0)
+            {
+                num++;
+                MessageBox.Show("Отчество");
+            }
+            else
+            {
+            }
+            if (TLogin.Length == 0)
+            {
+                MessageBox.Show("Логин");
+                num++;
+            }
+            else
+            {
+            }
+            if (TPassword.Length == 0)
+            {
+                MessageBox.Show("Пароль");
+                num++;
+            }
+            else
+            {
+            }
+            if (num > 0)
+            {
+                MessageBox.Show("Заполните пустые поля");
+                num = 0;
+            }
+            else
+            {
+                MessageBox.Show("Успешная регистрация");
+            }
+            if (TName == "Name")
+            {
+                MessageBox.Show("Error");
+            }
+        }
     }
 }
