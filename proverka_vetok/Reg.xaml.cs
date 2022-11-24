@@ -36,5 +36,22 @@ namespace proverka_vetok
                 MessageBox.Show("Заполните поля");
             }
         }
+
+        private void CLick_TestTextBox(object sender, RoutedEventArgs e)
+        {
+            char last = '\0';
+            string s = "";
+            Random r = new Random();
+            for (int i = 0; i < 5; i++)
+            {
+                var temp = (char)(r.Next(1072, 1104));
+                if (temp != last)
+                {
+                    s += temp;
+                    last = temp;
+                }
+            }
+            MessageBox.Show(s);
+        }
     }
 }
