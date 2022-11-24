@@ -22,15 +22,18 @@ namespace proverka_vetok
         public Reg()
         {
             InitializeComponent();
-            MessageBox.Show("egw");
         }
 
         private void CLick_ChekTextBox(object sender, RoutedEventArgs e)
         {
+            var TSurname = Surname.Text;
             var TName = Name.Text;
-            if (TName == "Павел")
+            var TPatronymic = Patronymic.Text;
+            var TLogin = Login.Text;
+            var TPassword = Password.Text;
+            if (TSurname.Length == 0 && TName.Length == 0 && TPatronymic.Length == 0 && TLogin.Length == 0 && TPassword.Length == 0)
             {
-                MessageBox.Show("Congratulations!");
+                MessageBox.Show("Заполните поля");
             }
         }
     }
