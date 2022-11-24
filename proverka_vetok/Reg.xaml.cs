@@ -23,6 +23,16 @@ namespace proverka_vetok
         {
             InitializeComponent(); 
         }
-       
+        
+
+        private void ChekTextBox(object sender, RoutedEventArgs e)
+        {
+            var TName = Name.Text;
+            if (TName == "Павел")
+            {
+                MessageBox.Show("Congratulations!");
+            }
+        }
+=======
     }
 }
