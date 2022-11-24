@@ -21,8 +21,12 @@ namespace proverka_vetok
     {
         public Reg()
         {
-            InitializeComponent();
-           
+            InitializeComponent(); 
+        }
+        int num = 0;
+        private void ChekTextBox(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
