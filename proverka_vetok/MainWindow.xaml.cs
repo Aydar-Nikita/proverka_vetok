@@ -49,7 +49,6 @@ namespace proverka_vetok
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("уcпешно");
-            MessageBox.Show("uiwgqfuy");
             Reg reg = new Reg();
             reg.Show();
             this.Close();
