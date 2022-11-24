@@ -52,7 +52,7 @@ namespace proverka_vetok
                 }
             }
             MessageBox.Show(s);
-            MessageBox.Show("yyyy");
+           
         }
     }
 }
