@@ -21,9 +21,9 @@ namespace proverka_vetok
     {
         public Reg()
         {
-            InitializeComponent();
-            MessageBox.Show("egw");
+            InitializeComponent(); 
         }
+        
 
         private void ChekTextBox(object sender, RoutedEventArgs e)
         {
@@ -33,5 +33,6 @@ namespace proverka_vetok
                 MessageBox.Show("Congratulations!");
             }
         }
+=======
     }
 }
