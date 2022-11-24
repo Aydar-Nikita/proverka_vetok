@@ -25,7 +25,7 @@ namespace proverka_vetok
             MessageBox.Show("egw");
         }
 
-        private void ChekTextBox(object sender, RoutedEventArgs e)
+        private void CLick_ChekTextBox(object sender, RoutedEventArgs e)
         {
             var TName = Name.Text;
             if (TName == "Павел")
