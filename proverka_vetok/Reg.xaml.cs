@@ -22,6 +22,7 @@ namespace proverka_vetok
         public Reg()
         {
             InitializeComponent();
+            MessageBox.Show("egw");
         }
     }
 }
